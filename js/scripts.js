@@ -3,12 +3,12 @@
 
 // Data source from AirTable API
 // Note: We're using NoCode API to make connecting to AirTable easier
-const url = "https://v1.nocodeapi.com/pmanikoth/airtable/rsqhQzAAKcMyyPPW?tableName=Roster";
+const url = "https://assets.codepen.io/16425/spring23web3.json";
 
 // Get data
 fetch(url)
-  .then( response  => response.json())
-  .then( data  => {
+  .then(response => response.json())
+  .then(data => {
     // check-check: get one image
     // Note: Webflow returns data in array called `items`
     console.log(data.records);
@@ -22,8 +22,8 @@ fetch(url)
     const gallery = document.querySelector(".gallery");
 
     // loop through data
-    data.records.forEach( student => {
-      
+    data.records.forEach(student => {
+
       // template
       const template = `
           <figure>

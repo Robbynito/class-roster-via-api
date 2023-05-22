@@ -3,10 +3,10 @@
 
 // Data source from AirTable API
 // Note: We're using NoCode API to make connecting to AirTable easier
-const url = "https://assets.codepen.io/16425/spring23web3.json";
+const dataSource = "https://assets.codepen.io/16425/spring23web3.json";
 
 // Get data
-fetch(url)
+fetch(dataSource)
   .then(response => response.json())
   .then(data => {
     // check-check: get one image
